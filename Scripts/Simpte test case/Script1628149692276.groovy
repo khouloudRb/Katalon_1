@@ -29,6 +29,8 @@ WebUI.click(findTestObject('Object Repository/GoogleAPI/Page_iCinema/li_Drama'))
 
 WebUI.waitForElementClickable(findTestObject('GoogleAPI/Page_iCinema/li_Drama'), 0)
 
+WebUI.waitForElementClickable(findTestObject('GoogleAPI/Page_iCinema/input'), 0)
+
 WebUI.setText(findTestObject('Object Repository/GoogleAPI/Page_iCinema/input'), 'a star')
 
 WebUI.closeBrowser()
