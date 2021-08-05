@@ -21,9 +21,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://localhost:3000/movies')
 
+WebUI.waitForElementClickable(findTestObject('GoogleAPI/Page_iCinema/li_Action'), 0)
+
 WebUI.click(findTestObject('Object Repository/GoogleAPI/Page_iCinema/li_Action'))
 
 WebUI.click(findTestObject('Object Repository/GoogleAPI/Page_iCinema/li_Drama'))
+
+WebUI.waitForElementClickable(findTestObject('GoogleAPI/Page_iCinema/li_Drama'), 0)
 
 WebUI.setText(findTestObject('Object Repository/GoogleAPI/Page_iCinema/input'), 'a star')
 
